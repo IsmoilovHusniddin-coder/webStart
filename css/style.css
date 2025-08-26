@@ -1,0 +1,143 @@
+/* lato-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/lato-v24-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* lato-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/lato-v24-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato";
+  box-sizing: border-box;
+}
+
+.containers {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero-mount-wrapper {
+  background-image: url(../images/strelka.svg), url(../images/hero-bg1.png);
+  background-size: 12px 12px, cover;
+  background-repeat: no-repeat;
+  background-position: right 99px, center;
+}
+
+@media (max-width: 640px) {
+  .btn {
+    padding: 7px 15px 7px 18px;
+  }
+}
+
+.btn {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  padding: 10px 20px 10px 25px;
+  background-color: #4592ff;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 20px;
+}
+
+.joy-grid {
+  display: grid;
+  gap: 29px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 170px);
+  grid-template-areas:
+    "a a b "
+    "a a b"
+    "c d e"
+    "c f g";
+}
+
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+@media (max-width: 1024px) {
+  .joy-grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    grid-template-rows: repeat(6, 170px);
+
+    grid-template-areas:
+      "a a  "
+      "a a "
+      "b c "
+      "b c"
+      "d e"
+      "f g";
+  }
+}
+@media (max-width: 500px) {
+  .joy-grid {
+    grid-template-columns: repeat(1, 1fr);
+
+    grid-template-rows: repeat(10, 170px);
+
+    grid-template-areas:
+      "a"
+      "a"
+      "b"
+      "b"
+      "c"
+      "c"
+      "d"
+      "e"
+      "f"
+      "g";
+  }
+}
+.card1 {
+  grid-area: a;
+  background-image: url(../images/joy-bg1.png);
+  background-repeat: no-repeat;
+  background-size: 292px 299px;
+  background-position: right center;
+}
+.card2 {
+  grid-area: b;
+  background-image: url(../images/joy-bg2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card3 {
+  grid-area: c;
+}
+.card4 {
+  grid-area: d;
+}
+.card5 {
+  grid-area: e;
+}
+.card6 {
+  grid-area: f;
+}
+.card7 {
+  grid-area: g;
+}
+
+.flower-section {
+  background-image: url(../images/flower-bg1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: right center  ; */
+}
