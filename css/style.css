@@ -202,3 +202,34 @@
 .read-4 {
   grid-area: k;
 }
+
+.grid-lenta {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(1, 5px);
+  grid-template-areas: "m n o p q r";
+}
+.grid-lenta1 {
+  grid-area: m;
+  background-color: #ff4f52;
+}
+.grid-lenta2 {
+  grid-area: n;
+  background-color: #ac8ee3;
+}
+.grid-lenta3 {
+  grid-area: o;
+  background-color: #4592ff;
+}
+.grid-lenta4 {
+  grid-area: p;
+  background-color: #ffa34d;
+}
+.grid-lenta5 {
+  grid-area: q;
+  background-color: #3dc47e;
+}
+.grid-lenta6 {
+  grid-area: r;
+  background-color: #6e99ae;
+}
